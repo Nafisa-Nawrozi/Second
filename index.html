@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarLight Cinema | Movie Theater</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">StarLight Cinema</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#now-showing">Now Showing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to StarLight Cinema</h2>
+      <p>Experience the magic of movies on the big screen!</p>
+      <a href="#now-showing" class="btn">See Showtimes</a>
+    </div>
+  </section>
+
+  <!-- Now Showing Section -->
+  <section id="now-showing" class="movies">
+    <h2>Now Showing</h2>
+    <div class="movie-cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/250x350" alt="Movie 1 Poster">
+        <h3>The Lost Kingdom</h3>
+        <p>An epic adventure through ancient lands filled with mystery and courage.</p>
+        <button>Book Tickets</button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/250x350" alt="Movie 2 Poster">
+        <h3>Moonlight Dreams</h3>
+        <p>A heartwarming story about love, hope, and the power of chasing dreams.</p>
+        <button>Book Tickets</button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/250x350" alt="Movie 3 Poster">
+        <h3>Galactic Warriors</h3>
+        <p>Join the battle for the stars in this thrilling sci-fi action adventure.</p>
+        <button>Book Tickets</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Location Section -->
+  <section id="about" class="about">
+    <h2>About StarLight Cinema</h2>
+    <p>
+      Located in the heart of the city, StarLight Cinema offers the latest blockbusters with state-of-the-art sound and picture quality. 
+      Enjoy a comfortable and unforgettable movie experience with us.
+    </p>
+    <p id="contact">📍 123 Main Street, City Center | ☎️ (555) 123-4567</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> StarLight Cinema. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Display current year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
